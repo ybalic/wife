@@ -48,8 +48,8 @@
     </section>
 
     <!-- Location Badge -->
-    <section class="location" aria-label="Localização do casal">
-      <div class="location__badge" id="location-badge">
+    <section class="location" aria-label="Localização">
+      <div class="location__badge">
         <div class="location__icon" aria-hidden="true">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -58,17 +58,14 @@
           </svg>
         </div>
         <p class="location__text">
-          Esposa está em
-          <span class="location__city" id="location-city">
-            <span class="location__skeleton" id="location-skeleton" aria-label="Carregando localização..."></span>
-          </span>
+          Esposa está em <span class="location__city">sua região</span>
         </p>
       </div>
     </section>
 
     <!-- CTA Buttons -->
     <section class="actions" aria-label="Ações principais">
-      <a href="https://t.me/+dFcUbVUIivBiZWQ5" class="btn btn--primary" id="btn-grupos" role="button">
+      <a href="#" class="btn btn--primary" id="btn-grupos" role="button">
         <span class="btn__glow" aria-hidden="true"></span>
         <span class="btn__content">
           <svg class="btn__icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
@@ -102,24 +99,7 @@
     </footer>
   </main>
 
-  <!-- Geolocation consent modal -->
-  <div class="modal-overlay" id="geo-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
-    <div class="modal">
-      <div class="modal__icon" aria-hidden="true">
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z"
-            fill="currentColor" />
-        </svg>
-      </div>
-      <h2 class="modal__title" id="modal-title">Permitir localização?</h2>
-      <p class="modal__text">Esposa está em, precisamos acessar sua localização.</p>
-      <div class="modal__actions">
-        <button class="modal__btn modal__btn--allow" id="geo-allow">Permitir</button>
-        <button class="modal__btn modal__btn--deny" id="geo-deny">Agora não</button>
-      </div>
-    </div>
-  </div>
+
 
   <script src="app.js"></script>
 </body>
