@@ -478,6 +478,34 @@ img {
   background: rgba(255, 255, 255, 0.02);
 }
 
+/* OnlyFans button — brand accent */
+.btn--onlyfans {
+  background: var(--bg-btn-secondary);
+  color: var(--text-btn-secondary);
+  border: 1px solid var(--border-btn);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn--onlyfans .btn__icon {
+  color: #00aff0;
+}
+
+.btn--onlyfans .btn__glow {
+  background: radial-gradient(circle at 50% 50%, rgba(0, 175, 240, 0.12) 0%, transparent 60%);
+}
+
+.btn--onlyfans:hover {
+  transform: translateY(-2px) scale(1.01);
+  border-color: rgba(0, 175, 240, 0.4);
+  background: rgba(0, 175, 240, 0.05);
+  box-shadow: 0 4px 20px rgba(0, 175, 240, 0.15), 0 0 0 1px rgba(0, 175, 240, 0.2);
+}
+
+.btn--onlyfans:active {
+  transform: translateY(0) scale(0.98);
+  background: rgba(0, 175, 240, 0.08);
+}
+
 /* Button ripple effect */
 .btn::after {
   content: '';
